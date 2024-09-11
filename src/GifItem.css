@@ -1,0 +1,39 @@
+.card {
+    background-color: #262626; /* Fondo oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 4px solid #ff0000; /* Borde inferior rojo */
+  }
+  
+  .card p {
+    background-color: #1a1a1a; /* Fondo negro para el texto */
+    color: #ff4d4d; /* Texto rojo */
+    font-size: 1.2rem;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize; /* Primera letra en mayúscula */
+    border-top: 2px solid rgba(255, 255, 255, 0.1); /* Separador sutil */
+    height: 60px; /* Para controlar la altura del contenedor de texto */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Si el texto es largo, añade puntos suspensivos */
+  }
+
+  

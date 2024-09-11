@@ -1,0 +1,122 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(240, 240, 240);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 60px;
+  background-color: #1a1a1a; /* Fondo negro */
+  color: white; /* Texto blanco */
+}
+
+input {
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid #ff0000; /* Rojo */
+  color: black;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff4d4d; /* Rojo más claro al hacer foco */
+}
+
+h2 {
+  font-size: 2rem;
+  color: #ff0000; /* Rojo */
+}
+
+h3 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaciado uniforme entre las tarjetas */
+}
+
+.card {
+  background-color: #262626; /* Fondo oscuro para tarjetas */
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Animación de aumento al pasar el mouse */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.7);
+}
+
+.card p {
+  background-color: transparent;
+  color: #ff4d4d; /* Texto rojo */
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-bottom: 5px solid #ff0000; /* Borde inferior rojo */
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border: 2px solid #ff0000; /* Borde rojo */
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+  border-color: #ff4d4d; /* Rojo más claro al hacer foco */
+}
+
+.search-button {
+  background-color: #ff0000; /* Rojo */
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0 25px 25px 0;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #cc0000; /* Oscurecer el rojo al hacer hover */
+}
+
+.search-button:active {
+  background-color: #b30000;
+}
